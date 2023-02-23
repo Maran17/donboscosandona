@@ -6,6 +6,7 @@ import Settori from '/components/settori'
 import Articoli from '/components/articoli'
 import Esplora from '/components/esplora'
 import Eventi from '/components/eventi'
+import Testo from '/components/testo'
 
 import { getDatiArticoli } from '/lib/articoli'
 
@@ -16,6 +17,10 @@ export default function Home({ datiArticoli }) {
       </Head>
       <Header />
       <Carousel />
+      <Testo>
+        Ciao
+        <br />
+        Ciao</Testo>
       <Settori />
       <Esplora />
       <Eventi />
