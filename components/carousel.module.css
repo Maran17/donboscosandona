@@ -1,22 +1,24 @@
-.ProjectCarousel {
+.carousel {
     width: 100%;
 }
 
-.ProjectCarousel .Project {
+.carousel .slide {
     position: relative;
     height: 500px;
     overflow: hidden;
     padding: 100px;
+    padding-top: 150px;
 }
 
-.ProjectCarousel .Project * {
+.carousel .slide * {
     color: white;
 }
 
-.ProjectCarousel .Project .CheckButton {
-    margin-top: 40px;
+.carousel .slide .bottone {
+    margin-top: 20px;
     color: white;
     font-size: 25px;
     border: 3px solid white;
     text-transform: capitalize;
 }
+

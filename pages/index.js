@@ -41,18 +41,46 @@ const posts = [
   },
 ]
 
+let slides = [
+  {
+      titolo: "Lear Music Reader",
+      descrizione: "A PDF Reader specially designed for musicians.",
+      colore: "#64ACC8",
+      immagine: "https://source.unsplash.com/1600x900/?space"
+  },
+  {
+      titolo: "Hash Code 2019",
+      descrizione: "My Solution on the 2019 Hash Code by Google Slideshow problem.",
+      colore: "#7D85B1",
+      immagine: "https://source.unsplash.com/1600x900/?portrait"
+  },
+  {
+      titolo: "Terrio",
+      descrizione: "A exciting mobile game game made in the Unity Engine.",
+      colore: "#CE7E78",
+      immagine: "https://source.unsplash.com/1600x900/?water"
+  },
+  {
+      titolo: "React Carousel",
+      descrizione: "A Generic carousel UI component for React using material ui.",
+      colore: "#C9A27E",
+      immagine: "https://source.unsplash.com/1600x900/?nature"
+  }
+]
+
 export default function Home({ datiArticoli }) {
   return (
     <Layout>
       <Head>
       </Head>
+      <Carousel slides={slides} />
       <PostInEvidenza post={postInEvidenza} />
       <Grid container spacing={4}>
         {posts.map((post) => (
           <Post key={post.titolo} post={post} />
         ))}
       </Grid>
-      <Carousel />
+
       <Testo>
         Ciao
         <br />
