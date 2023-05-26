@@ -13,7 +13,7 @@ export default function SogniCard({ sogno }) {
     <Card>
       <CardMedia
         sx={{ height: 300 }}
-        image={'http://127.0.0.1:3843' + sogno.cover}
+        image={'http://127.0.0.1:3818' + sogno.cover}
         title={sogno.nome}
       />
       <CardContent>
